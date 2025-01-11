@@ -24,6 +24,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\match_test.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\mess.csv">
           <value>
             <Attribute>
