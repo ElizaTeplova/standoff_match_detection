@@ -1,0 +1,2 @@
+class DataReporterException(Exception):
+    pass

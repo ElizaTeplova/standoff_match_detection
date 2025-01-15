@@ -1,0 +1,2 @@
+class VideoPreprocessorException(Exception):
+    pass

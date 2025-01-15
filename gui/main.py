@@ -88,9 +88,9 @@ def draw_table(match_full_path: str) -> None:
 
             for i, row in match_df.iterrows():
                 with dpg.table_row():
-                    active_player: str = row[3]
-                    helper_player = None if pd.isna(row[4]) else row[4]
-                    passive_player: str = row[5]
+                    active_player: str = row.loc['active_player']
+                    helper_player = None if pd.isna(row.loc['helper_player']) else row.loc['helper_player']
+                    passive_player: str = row.loc['passive_player']
                     # region Active Player
                     if not players.__contains__(active_player):
                         players[active_player] = Player(
